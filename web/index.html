@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+    <title> Author Bot </title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script> 
+    
+</head>
+<body onload="animateBot()" style="background-color:#594F4F"> 
+
+    <div class="row">
+        <div id="shift">
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="col-lg-4">
+            <h1 style= "padding-top: 25px; font-family: 'Open Sans Condensed'; font-size: 36pt; color: #ffffff; text-align:center">  </h1>
+
+            <div class="text-center">
+                <!--<label class="col-lg-4 control-label" for="singlebutton"></label>-->
+                <button style="background-color:#594F4F; border-style:none;" onclick="startNewAuthor();">
+                    <div id="bot">
+                        <img src="imgs/robot_00000.png"/>
+                        <img src="imgs/robot_00001.png"/>
+                        <img src="imgs/robot_00002.png"/>
+                        <img src="imgs/robot_00003.png"/>
+                    </div>
+                </button>
+            </div> 
+        </div>
+        <div class="col-lg-4">
+
+            <div class="text-center">
+                <!--<label class="col-lg-4 control-label" for="singlebutton"></label>-->
+                
+                <p id ="speech" style= "padding-top: 250px; padding-left: 30px; font-family: 'Open Sans Condensed'; font-size: 25pt; color: #ffffff; text-align:left">
+                    Hi!  I'm Author Bot.  <br> Click me to have me <br> imitate an author!
+                </P>
+
+            </div> 
+
+
+
+        </div>
+    </div>
+
+
+    
+    <div class="text-center" id="authorBot" style="opacity: 0; color: #ffffff; font-family: 'Open Sans Condensed'">
+
+    </div>
+
+<!--<div class="form-group">
+    <div class="row">
+    <label class="col-md-2 control-label" for="singlebutton"></label>
+    <div class="col-md-2">
+        <button type="button" style="width:100%" class="btn btn-default btn-lg">
+            Find a new book! <span class="glyphicon glyphicon-book" aria-hidden="true">
+        </button>
+    </div>
+</div>
+</div>
+-->
+<div id="more" class="text-center" style="margin-top:50px; opacity:0">    
+    <div class="text-center">   
+                <button type="button" onclick="readBookByAuthor()" style="margin-left: 50px; margin-right: 25px" class="btn btn-default btn-lg"> I Like! </button>
+                <button type="button" class="btn btn-default btn-lg" onclick="startNewAuthor()"> New Author </button>
+        </div>
+</div>
+
+<div style="height:100px; width:100%; clear:both;"></div>
+
+<!--<br>
+<br>
+
+    <input class="form-control" id="name" ng-model="message.name" type="text" required name="name" placeholder="Search by Genre"> </input>
+</body>
+</html>-->
+
+
